@@ -1,89 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Tyler</title>
-  <style>
-    body {
-      font-family: Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fafafa;
-      color: #222;
-    }
-    header {
-      background-color: #4a6fa5;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      background-color: #355c7d;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #355c7d;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-    p {
-      line-height: 1.7;
-    }
-    footer {
-      background-color: #4a6fa5;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Tyler</h1>
-    <p>Student at the University of Massachusetts Boston</p>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#education">Education</a>
-    <a href="#life">Life & Interests</a>
-  </nav>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>My name is Tyler, and right now I’m working toward my Bachelor of Science degree in Computer Science at UMass Boston. I’ve always been curious about how technology works and how it connects people, and that curiosity has grown into a real passion for learning about programming, problem-solving, and building things that can make life easier or more interesting. I don’t see myself as just a student checking boxes for a degree — I’m someone who wants to understand the bigger picture of how computers shape the world we live in.</p>
-  </section>
+    <title>Tyler's Homepage</title>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/UMass.png" width="60" height="30" class="d-inline-block align-top" alt="">
+        Tyler
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p>I started out at Marshfield High School, where I spent a lot of time figuring out what I cared about and what I wanted to do with my future. High school gave me a foundation, but college has been where I’ve really started to grow. At the University of Massachusetts Boston, I’m on the Computer Science BS track. It’s challenging, but I enjoy the process of learning new concepts, even when they’re tough. Every class feels like another step toward becoming someone who can contribute to the field of technology in a meaningful way.</p>
-  </section>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <section id="life">
-    <h2>Life & Interests</h2>
-    <p>Outside of academics, I try to keep a balance between studying and living life. I enjoy exploring new ideas, whether that’s through coding projects, reading, or just having conversations with people who think differently than I do. I like seeing how different perspectives can change the way you look at a problem. I also enjoy the simple things — spending time with friends, listening to music, or just taking a break to clear my head. I think being human means more than just chasing grades or career goals; it’s about finding meaning in the everyday moments too.</p>
-  </section>
+    <!-- Main content -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <h1>Tyler</h1>
+          <h3>Computer Science Student</h3>
+          <h6>University of Massachusetts Boston</h6>
+          <p align="justify">
+            My name is Tyler, and I am currently pursuing a Bachelor of Science in Computer Science at UMass Boston. 
+            I graduated from Marshfield High School, where I first began to explore my interests in technology and problem‑solving. 
+            At UMass Boston, I am continuing to grow as a student, learning not only the technical skills of programming and systems, 
+            but also how computer science connects to the bigger picture of society and innovation.
+          </p>
+          <p align="justify">
+            I enjoy working through challenges, whether in coursework or personal projects, and I try to approach learning with curiosity and persistence. 
+            My long‑term goal is to use my education to contribute to meaningful projects in technology, whether that means software development, research, or teaching others.
+          </p>
+        </div>
 
-  <footer>
-    <p>&copy; 2025 Tyler | University of Massachusetts Boston</p>
-  </footer>
-</body>
+        <div class="col-lg-4 col-md-4">
+          <br/>
+          <img src="img/profile.jpg" width="400" height="380" alt="Tyler's photo">
+        </div>
+
+        <div class="col-lg-12">
+          <h3 id="education" style="padding-top:60px">Education</h3>
+          <ul>
+            <li><h6>Marshfield High School — Graduate</h6></li>
+            <li><h6>University of Massachusetts Boston — B.S. in Computer Science (in progress)</h6></li>
+          </ul>
+
+          <h3 id="projects" style="padding-top:60px">Projects</h3>
+          <p align="justify">
+            I am currently building my skills through coursework and small projects. These include programming assignments, 
+            exploring web development, and experimenting with problem‑solving in different languages. 
+            As I progress, I plan to take on larger projects that combine creativity and technical knowledge.
+          </p>
+
+          <h3 id="interests" style="padding-top:60px">Interests</h3>
+          <p align="justify">
+            Outside of academics, I enjoy reading, listening to music, and spending time with friends. 
+            I like exploring new ideas and perspectives, whether through conversations or creative work. 
+            I believe that being a student is not just about grades, but about staying curious and finding meaning in everyday experiences.
+          </p>
+
+          <h3 id="contact" style="padding-top:60px">Contact</h3>
+          <table>
+            <tr>
+              <td><img src="img/mail.png" width="40" height="25" alt=""></td>
+              <td><a href="mailto:tyler@student.umb.edu">tyler@student.umb.edu</a></td>
+            </tr>
+            <tr>
+              <td><img src="img/home.png" width="40" height="40" alt=""></td>
+              <td>University of Massachusetts Boston<br/>
+                  Computer Science Department<br/>
+                  Boston, MA
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
